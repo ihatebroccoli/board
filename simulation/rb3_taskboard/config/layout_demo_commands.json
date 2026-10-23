@@ -1,0 +1,95 @@
+[
+  {
+    "op": "move_tcp",
+    "position": [
+      0.36,
+      0.25,
+      0.3
+    ]
+  },
+  {
+    "op": "wait",
+    "seconds": 2.5
+  },
+  {
+    "op": "rearrange",
+    "layout": [
+      [
+        "lan",
+        "hdmi",
+        "bnc"
+      ],
+      [
+        "usb",
+        "outlet",
+        "rotary"
+      ],
+      [
+        "audio",
+        "locker",
+        "latch"
+      ]
+    ],
+    "duration": 3.0
+  },
+  {
+    "op": "pick_and_insert",
+    "object": "usb"
+  },
+  {
+    "op": "move_tcp",
+    "position": [
+      0.36,
+      0.25,
+      0.3
+    ]
+  },
+  {
+    "op": "wait",
+    "seconds": 1.5
+  },
+  {
+    "op": "rearrange",
+    "layout": [
+      [
+        "rotary",
+        "audio",
+        "latch"
+      ],
+      [
+        "bnc",
+        "usb",
+        "locker"
+      ],
+      [
+        "hdmi",
+        "lan",
+        "outlet"
+      ]
+    ],
+    "duration": 3.0
+  },
+  {
+    "op": "reset"
+  },
+  {
+    "op": "wait",
+    "seconds": 2.5
+  },
+  {
+    "op": "pick_and_insert",
+    "object": "usb"
+  },
+  {
+    "op": "move_tcp",
+    "position": [
+      0.36,
+      0.25,
+      0.3
+    ]
+  },
+  {
+    "op": "wait",
+    "seconds": 3.0
+  }
+]

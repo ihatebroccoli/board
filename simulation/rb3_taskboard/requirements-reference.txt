@@ -1,0 +1,7 @@
+# Optional source-recording extraction and camera/depth analysis.
+# Versions recorded from the working Python 3.8.18 analysis environment.
+# These packages are not required to run the configured scene in Isaac Sim.
+numpy==1.24.4
+Pillow==10.4.0
+scipy==1.10.1
+opencv-python==4.7.0.72

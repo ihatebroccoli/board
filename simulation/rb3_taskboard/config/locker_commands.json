@@ -1,0 +1,86 @@
+[
+  {
+    "op": "wait",
+    "seconds": 1.0
+  },
+  {
+    "op": "move_tcp",
+    "position": [
+      0.35,
+      0,
+      0.2
+    ]
+  },
+  {
+    "op": "move_tcp",
+    "position": [
+      0.35,
+      0,
+      0.075
+    ]
+  },
+  {
+    "op": "rotate",
+    "object": "locker",
+    "angle_deg": 45,
+    "duration": 1.5
+  },
+  {
+    "op": "wait",
+    "seconds": 0.5
+  },
+  {
+    "op": "rotate",
+    "object": "locker",
+    "angle_deg": 90,
+    "duration": 1.5
+  },
+  {
+    "op": "move_tcp",
+    "position": [
+      0.35,
+      0,
+      0.24
+    ]
+  },
+  {
+    "op": "wait",
+    "seconds": 1.5
+  },
+  {
+    "op": "move_tcp",
+    "position": [
+      0.35,
+      0,
+      0.075
+    ]
+  },
+  {
+    "op": "rotate",
+    "object": "locker",
+    "angle_deg": 45,
+    "duration": 1.5
+  },
+  {
+    "op": "wait",
+    "seconds": 0.5
+  },
+  {
+    "op": "rotate",
+    "object": "locker",
+    "angle_deg": 0,
+    "duration": 1.5
+  },
+  {
+    "op": "move_tcp",
+    "position": [
+      0.35,
+      0,
+      0.24
+    ]
+  },
+  {
+    "op": "wait",
+    "seconds": 1.5
+  }
+]

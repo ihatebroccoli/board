@@ -1,0 +1,5 @@
+# Separate CPU inspection/test environment; verified with Python 3.10.14.
+# Do not install usd-core into Isaac Sim's bundled Python environment.
+numpy==1.26.4
+usd-core==24.11
+imageio-ffmpeg==0.6.0

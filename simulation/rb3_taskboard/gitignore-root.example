@@ -1,0 +1,12 @@
+# Copy to .gitignore at the root of a NEW, dedicated repository.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv*/
+logs/
+outputs/
+artifacts/
+runtime/
+*.pkl
+*.log
+.DS_Store

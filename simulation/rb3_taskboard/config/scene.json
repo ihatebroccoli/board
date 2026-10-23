@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "description": "RB3-730 modular taskboard reconstructed approximately from the supplied RGB/depth recording. Units are metres and degrees unless named otherwise.",
+  "coordinate_convention": "Right-handed Z-up. X increases from robot/back toward front; Y+ appears right in the head camera. Layout rows are back to front, columns are image left to right (Y- to Y+). Tabletop is Z=0.",
+  "board_center_m": [
+    0.44,
+    0.0,
+    0.0
+  ],
+  "panel_size_m": [
+    0.09,
+    0.09,
+    0.035
+  ],
+  "panel_gap_m": 0.0,
+  "layout": [
+    [
+      "usb",
+      "locker",
+      "outlet"
+    ],
+    [
+      "audio",
+      "hdmi",
+      "latch"
+    ],
+    [
+      "lan",
+      "rotary",
+      "bnc"
+    ]
+  ],
+  "layout_provenance": "Visual estimate from head frame 0 and wrist frames 460/690; small connector apertures make USB/audio/LAN/HDMI assignments provisional and editable.",
+  "rack_center_m": [
+    0.44,
+    -0.2,
+    0.0
+  ],
+  "rack_order_back_to_front": [
+    "outlet",
+    "hdmi",
+    "usb",
+    "lan",
+    "audio",
+    "bnc"
+  ],
+  "robot_base_m": [
+    0.0,
+    0.0,
+    0.38
+  ],
+  "robot_base_provenance": "Estimated 38 cm tall rear mounting column from the external image; not calibrated. Selected pose supports all task locations.",
+  "gripper": {
+    "length_m": 0.1,
+    "max_opening_m": 0.075,
+    "provenance": "10 cm finger length requested by user; parallel jaws with approximate 7.5 cm opening, not the real AGILEX mechanism."
+  },
+  "interaction": {
+    "grasp_distance_m": 0.028,
+    "insert_distance_m": 0.04,
+    "insert_angle_deg": 40.0,
+    "rotary_limits_deg": [
+      45.0,
+      105.0
+    ],
+    "rotary_detent_threshold_deg": 75.0,
+    "locker_limits_deg": [
+      0.0,
+      90.0
+    ],
+    "latch_limits_deg": [
+      -165.0,
+      165.0
+    ],
+    "latch_limit_provenance": "330-degree travel is an adjustable approximation of the user-described obstructed sector; exact obstruction angle was not measured.",
+    "released_plug_center_z_m": 0.035,
+    "mechanism": "High-level kinematic grasp, release, near-socket alignment/attachment, and constrained rotary state transitions. No insertion-force model.",
+    "rotary_hysteresis_deg": 10.0,
+    "locker_bolt_travel_m": 0.016
+  },
+  "head_camera": {
+    "calibration_status": "estimated_not_calibrated",
+    "resolution": [
+      640,
+      480
+    ],
+    "eye_m": [
+      0.8010426459254262,
+      0.010070789057688235,
+      0.6256769799717607
+    ],
+    "target_m": [
+      0.20972679088107837,
+      -0.002341884204764699,
+      -0.18066754014085928
+    ],
+    "up": [
+      -0.806430683324387,
+      0.013921373403096293,
+      0.5911647387619914
+    ],
+    "intrinsics_px": {
+      "fx": 386.6158266710722,
+      "fy": 386.6158266710722,
+      "cx": 319.5,
+      "cy": 239.5
+    },
+    "horizontal_aperture_mm": 20.955,
+    "focal_length_mm": 12.658647887331746,
+    "depth_unit_m": null,
+    "estimate_provenance": {
+      "reference": "observation head_cam_d455 at step 0",
+      "method": "Planar solvePnP from manually selected RGB corners with focal chosen so median board predicted optical depth/raw depth equals the unverified nominal 0.001 m/raw D455 hypothesis.",
+      "board_corners_image_px": [
+        [
+          248.0,
+          213.0
+        ],
+        [
+          390.0,
+          211.0
+        ],
+        [
+          405.0,
+          342.0
+        ],
+        [
+          234.0,
+          344.0
+        ]
+      ],
+      "board_corners_world_m": [
+        [
+          0.305,
+          -0.135,
+          0.043000000000000003
+        ],
+        [
+          0.305,
+          0.135,
+          0.043000000000000003
+        ],
+        [
+          0.575,
+          0.135,
+          0.043000000000000003
+        ],
+        [
+          0.575,
+          -0.135,
+          0.043000000000000003
+        ]
+      ],
+      "assumed_principal_point_px": [
+        319.5,
+        239.5
+      ],
+      "assumed_lens_distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "fit_rms_per_coordinate_px": 1.4481219052494523,
+      "confidence": "Estimated, not calibrated. Supported by relative raw-depth planarity and gradients, but depth units and RGB-depth registration remain unverified.",
+      "depth_note": "Raw uint16 preserved. See depth_consistency.json for scale/focal ambiguity, residuals, table-plane consistency, and the independent D405 limitation."
+    },
+    "assumed_scale_m_per_raw_unit_for_fit": 0.001,
+    "depth_assumption": {
+      "assumed_scale_m_per_raw_unit": 0.001,
+      "verified": false,
+      "purpose": "Camera-estimation hypothesis only; do not convert raw depths as calibrated measurements.",
+      "RGB_depth_alignment_verified": false
+    }
+  },
+  "wrist_camera": {
+    "calibration_status": "estimated_not_calibrated",
+    "resolution": [
+      640,
+      480
+    ],
+    "mount_parent": "tool_flange",
+    "mount_translation_m": [
+      0.0,
+      0.055,
+      0.035
+    ],
+    "forward_axis_in_flange": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "up_axis_in_flange": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "intrinsics_px": {
+      "fx": 450.0,
+      "fy": 450.0,
+      "cx": 319.5,
+      "cy": 239.5
+    },
+    "horizontal_aperture_mm": 20.955,
+    "focal_length_mm": 14.733984375,
+    "depth_unit_m": null,
+    "estimate_provenance": "Illustrative flange-mounted view. Intrinsics and mount offset are adjustable guesses because neither intrinsics nor hand-eye calibration was supplied."
+  },
+  "baseplate_height": 0.008,
+  "fixture_yaw_deg": {
+    "hdmi": 90.0,
+    "latch": 90.0,
+    "locker": 90.0
+  },
+  "fixture_yaw_provenance": "Estimated fixture orientations from the external camera: wide HDMI face and latch/locker plates run across the image."
+}

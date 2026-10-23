@@ -1,0 +1,10 @@
+[
+  {"op": "pick_and_insert", "object": "usb"},
+  {"op": "move_tcp", "position": [0.53, 0.0, 0.215]},
+  {"op": "move_tcp", "position": [0.53, 0.0, 0.087]},
+  {"op": "rotate", "object": "rotary", "angle_deg": 105, "duration": 1.0},
+  {"op": "move_tcp", "position": [0.36, 0.24, 0.28]},
+  {"op": "rearrange", "layout": [["lan", "hdmi", "bnc"], ["audio", "usb", "latch"], ["outlet", "rotary", "locker"]]},
+  {"op": "wait", "seconds": 1.0},
+  {"op": "reset"}
+]

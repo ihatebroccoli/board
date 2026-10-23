@@ -1,0 +1,41 @@
+{
+  "recorded_on": "2026-10-23",
+  "purpose": "Observed working environments, not a declaration of minimum system requirements or a complete dependency lock.",
+  "host": {
+    "os": "Ubuntu 20.04.6 LTS x86_64",
+    "gpu_used_for_rendering": "NVIDIA GeForce RTX 3090 24 GiB (one GPU per run)",
+    "nvidia_driver": "535.183.01"
+  },
+  "simulation": {
+    "distribution": "Isaac Sim standalone",
+    "version": "4.5.0",
+    "build": "4.5.0-rc.36+release.19112.f59b3005.gl",
+    "python": "3.10.15",
+    "numpy": "1.26.0",
+    "Pillow": "11.0.0",
+    "usd_source": "Bundled Isaac/Kit extensions loaded after SimulationApp; not the separate usd-core wheel",
+    "render_modules": ["isaacsim", "isaacsim.core.api", "isaacsim.sensors.camera", "omni.usd", "omni.replicator.core", "pxr"]
+  },
+  "inspection": {
+    "python": "3.10.14",
+    "numpy": "1.26.4",
+    "usd-core": "24.11",
+    "imageio-ffmpeg": "0.6.0",
+    "ffmpeg_binary": "7.0.2",
+    "required_codecs": ["libx264", "aac"]
+  },
+  "optional_reference_analysis": {
+    "python": "3.8.18",
+    "numpy": "1.24.4",
+    "Pillow": "10.4.0",
+    "scipy": "1.10.1",
+    "opencv-python": "4.7.0.72"
+  },
+  "system_font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+  "robot_source": {
+    "repository": "https://github.com/RainbowRobotics/rbpodo_ros2",
+    "revision": "5e8294a985e7ce5e20e70564c2681130afc5f502",
+    "model": "rb3_730es_u",
+    "license_file": "rbpodo_description/LICENSE"
+  }
+}
